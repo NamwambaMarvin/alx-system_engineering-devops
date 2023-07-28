@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # Kills a process without killl or killall command
-pkill -f "7-highlander"
+pkill -SIGTERM -f "7-highlander"
