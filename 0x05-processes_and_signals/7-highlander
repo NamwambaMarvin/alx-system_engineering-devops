@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Prints "I am invicible" when it receives SIGTERM
+trap 'echo "I am invicible!!!"' TERM
+while :
+	echo "To infinity and beyond"
+	sleep 2
+done
