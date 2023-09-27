@@ -2,9 +2,8 @@
 # Install the nginx server listening on port 80
 # When we query nginx at the root it returns a page containing  a string "Hello World"
 
-sudo -su
-apt update
-apt install -y nginx
-ufw allow 'Nginx HTTP'
-echo "Hello World!" > /var/www/html/index.html
-service nginx restart
+sudo apt update
+sudo apt install -y nginx
+sudo ufw allow 'Nginx HTTP'
+sudo echo "Hello World!" > /var/www/html/index.html
+sudo service nginx restart
